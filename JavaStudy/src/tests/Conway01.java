@@ -136,7 +136,7 @@ public class Conway01 {
         int cnt = 0;
 
         boolean colMin = col>0;
-        boolean colmax = col<tableSize-1;
+        boolean colMax = col<tableSize-1;
 
         if(row>0){
             if(colMin && tableOld[row-1][col-1]){
@@ -145,7 +145,7 @@ public class Conway01 {
             if(          tableOld[row-1][col]){
                 cnt ++;
             }
-            if(colmax && tableOld[row-1][col+1]){
+            if(colMax && tableOld[row-1][col+1]){
                 cnt ++;
             }
         }
@@ -154,7 +154,7 @@ public class Conway01 {
                 cnt ++;
             }
 //        if(tableOld[row  ][col])   cnt ++;
-            if(colmax && tableOld[row  ][col+1]){
+            if(colMax && tableOld[row  ][col+1]){
                 cnt ++;
             }
 
@@ -165,7 +165,7 @@ public class Conway01 {
             if(          tableOld[row+1][col]){
                 cnt ++;
             }
-            if(colmax && tableOld[row+1][col+1]){
+            if(colMax && tableOld[row+1][col+1]){
                 cnt ++;
             }
         }
